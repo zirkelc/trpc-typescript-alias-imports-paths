@@ -1,8 +1,24 @@
 {
   "compilerOptions": {
+    "lib": [
+      "es2021"
+    ],
+    "module": "Node16",
+    "target": "es2021",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
-    "outDir": "dist"
-  }
+    "outDir": "dist",
+    "baseUrl": "./src",
+    "paths": {
+      "@/server/trpc/*": [
+        "trpc/*.ts"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
 }

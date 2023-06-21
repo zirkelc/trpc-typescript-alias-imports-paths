@@ -1,0 +1,93 @@
+# package directories
+node_modules
+jspm_packages
+
+# Amplify generated graphql statements and types
+# **/graphql/mutations.ts
+# **/graphql/queries.ts
+# **/graphql/subscriptions.ts
+# **/graphql/types.ts
+
+# Serverless directories
+.serverless
+.step-functions-local
+
+# Webpack directories
+.webpack
+.env
+
+# ESBuild directories
+.esbuild
+
+# Temp directories
+.temp
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.eslintcache
+*.code-workspace
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Yarn
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# testing
+coverage
+
+# production
+build
+dist
+lib
+
+# Amplify
+# https://docs.amplify.aws/cli/reference/files/#amplifyconfig
+**/amplify/\#current-cloud-backend
+**/amplify/.config/local-*
+**/amplify/logs
+**/amplify/mock-data
+**/amplify/backend/amplify-meta.json
+**/amplify/backend/awscloudformation
+**/amplify/backend/.temp
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+
+#amplify-do-not-edit-begin
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/backend/amplify-meta.json
+amplify/backend/.temp
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplifyconfiguration.dart
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+**.sample
+#amplify-do-not-edit-end
+
